@@ -109,7 +109,8 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
+
   if (storage) {
     localStorage.setItem(
       "results",
@@ -138,6 +139,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   // Right side bar/ answer section
   let x = setTimeout(() => {
     showAnswers(answers);
+
     displayResult.innerHTML = `<div
     class="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center border-2 rounded-tr-[50%] rounded-bl-[50%]"
   >
@@ -154,6 +156,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   </div>
   
   <button onclick="location.reload();" class="bg-green-600 text-white w-full py-2 rounded mt-16">Restart</button>
+  
   ${
     storage
       ? `<div class="mt-5">
@@ -177,6 +180,7 @@ document.querySelector("#submit").addEventListener("click", () => {
       ?.join("")}`
       : ""
   }
+
   </div>
   `;
 
