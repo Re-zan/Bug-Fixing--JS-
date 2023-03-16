@@ -47,7 +47,6 @@
             </p>
           </div></a
         >
-
         <button
           class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
         >
@@ -56,5 +55,61 @@
       </nav>
     </header>
     <!-- Header/Navbar section end -->
+
+    <!-- main content start -->
+    <main class="w-7/12 rounded shadow mx-auto my-20">
+      <ul class="p-8">
+        <li>
+          <p class="text-3xl">
+            Question 02: What is the difference beetween map, foreach, find and
+            filter?
+          </p>
+          <p class="py-3">
+            Ans: <span class="text-blue-700 text-lg">Map: </span> Map iterates
+            every elements in the array and it's returned us a newarray. But it
+            doesn't modified the main array.
+            <br />
+            <span class="text-orange-800 text-lg">Foreach: </span> Foreach
+            iterates every elements in the array and it doesn't return.But it
+            also doesn't modified the main array.
+            <br />
+            <span class="text-rose-600 text-lg">Filter: </span> Filter iterates
+            every elements in the array. We have to give a condition on the
+            filter method.Filter method gives us a new array. The array contains
+            thoese values which are fulfil by the conditon.
+            <br />
+            <span class="text-amber-600 text-lg">Find: </span> Find iterates
+            every elements in the array. We have to give a condition on the Find
+            method.Filter method gives us an element which is matched by the
+            conditon.
+          </p>
+        </li>
+
+        <li>
+          <p class="text-3xl">Question 01: What is Event lopp in BOM?</p>
+          <p class="py-3">
+            Ans: V8 engine is Javascript run time which is a free and
+            open-source JavaScript engine developed by the Chromium Project for
+            Google Chrome and Chromium web browsers. It has two part. <br />
+            1. Heap.<br />
+            2. Stack.<br />
+            Every Functions are stored in the stack in LIFO way. asyn functions
+            are settimeout , setinertveral, AudioContext,
+            MediaElementAudioSourceNode etc. These api functons don't run on the
+            stack. Stack send them to WebAPi section when the functions are
+            ready to run then thoses functions come to the Call queue in FIFO
+            way. Synchronous functions are only completed in stack part. Once
+            all the Synchronous functions are completed then Call queue send
+            functions which are stored on that section. But it doesn't happen
+            without event loop. Basically event loop work as a bridge. Event
+            loop check the stack section when it will empty.When event loop see
+            that stack section is empty then event loop send a function from
+            call queue to stack section. Stack section will complete the rest of
+            aSynchronous functions.
+          </p>
+        </li>
+      </ul>
+    </main>
+    <!-- main content end -->
   </body>
 </html>
